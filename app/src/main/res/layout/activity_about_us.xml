@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutUsActivity">
+   >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,49 +15,21 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="38dp">
 
-
-        <TextView
-            android:id="@+id/textView"
+        <fragment
+            android:id="@+id/fragment"
+            android:name="com.example.myfirstapp.AboutFragment"
             android:layout_width="match_parent"
-            android:layout_height="53dp"
-            android:gravity="center"
-            android:text="@string/about"
-            android:textColor="#0E0D0D"
-            android:textSize="24sp" />
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_about"
+            />
 
-        <TextView
-            android:id="@+id/description"
+        
+        <fragment
+            android:id="@+id/fragment2"
+            android:name="com.example.myfirstapp.AppDevInfoFragment"
             android:layout_width="match_parent"
-            android:layout_height="169dp"
-            android:text="@string/app_description"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/email_info"
-            android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:autofillHints=""
-            android:background="@null"
-            android:ems="10"
-            android:gravity="center_vertical"
-            android:hint=""
-            android:inputType="none"
-            android:text="@string/email_fdf_gmail_com"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/version"
-            android:gravity="center_vertical"
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:text="@string/version_1_0" />
-
-        <TextView
-            android:gravity="center_vertical"
-            android:id="@+id/support"
-            android:layout_width="match_parent"
-            android:layout_height="36dp"
-            android:text="@string/support" />
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_app_dev_info"/>
 
 
     </LinearLayout>
